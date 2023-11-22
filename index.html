@@ -1,0 +1,479 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        body{
+            /* background-image: url(/images/portfolioimg1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat; */
+            background-color: black;
+            
+        }
+
+        .me{
+          text-align: center;
+          font-size: 2.5rem;
+          color: white;
+          margin-top: 350px;
+        }
+
+        .about{
+          text-align: center;
+          font-size: 1.8rem;
+          color: white;
+        }
+
+        .span-col{
+          color: yellow;
+        }
+
+        #pic{
+          margin-top: 100px;
+          margin-left: 50px;
+        }
+
+        .custom-shadow {
+          box-shadow: 5px 5px 10px #070700;
+        }
+
+        .card{
+          box-shadow: 0 4px 8px rgba(255, 255, 0, 0.3);
+          border: 2px solid yellow; 
+          border-radius: 8px;
+        }
+
+        .skill{
+          color: white;
+        }
+
+        .django{
+          margin-top: 13px;
+        }
+
+        .project{
+          text-align: center;
+          color: white;
+        }
+
+        .social-icons{
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          position: relative;
+          top: -38px;
+        }
+
+        .social-icons a{
+          margin-left: 15px;
+        }
+
+        .social-icons i{
+          font-size: 20px;
+        }
+
+        .fa-twitter{
+          color: yellow;
+        }
+        
+        .fa-instagram{
+          color: yellow;
+        }
+        .text{
+          color: white;
+          margin-left: 15px;
+        }
+
+        /* Contact Form CSS */
+
+        .section-header {
+    text-align: center;
+    font: 300 36px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: yellow;
+  }
+
+
+  .fa-codepen{
+    color: yellow;
+  }
+
+  .fa-github{
+    color: yellow;
+  }
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 383px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+
+  
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+
+/* Right contact page */
+.direct-contact-container {
+    padding-left: 20px;
+  }
+  
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+    margin-bottom: 350px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+
+  /* .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+   */
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+  
+  /* Social Media Icons */
+
+  .social-media-and-copyright {
+    margin-top: -300px; /* Adjust the margin-top as needed */
+    text-align: center; /* Center the content horizontally */
+  }
+
+
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  
+  .social-media-list li {
+    display: inline-block;
+    position: relative; 
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+        
+    </style>
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <div class="container-fluid"> 
+          <a class="navbar-brand" href="#"><strong>Mithun D Nair</strong></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#home"><strong>Home</strong></a>
+              <a class="nav-link" href="#skills" style="color: black;"><strong>Skills</strong></a>
+              <a class="nav-link" href="#projects" style="color: black;"><strong>Projects</strong></a>
+              <a class="nav-link" href="#contact" style="color: black;"><strong>Contact</strong></a>
+              <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+            </div>
+          </div>
+          <!-- <div class="d-flex order-3">
+            <a class="btn btn-warning" href="#" role="button"><strong>Contact</strong></a>
+          </div> -->
+        </div>
+      </nav>
+
+
+      <section class="mt-3" id="home">
+        <div class="row align-items-center p-4">
+          <div class="col-md-4">
+            <img src="/images/portfolio.png" alt="profile" class="img-fluid custom-shadow" id="pic">
+            <!-- <img src="pic_nobg.png" alt="profile" class="img-fluid rounded-circle shadow-4-strong"> -->
+          </div>
+          <div class="col-md-8">
+            <h4 style="text-align: center;" class="animate__animated animate__lightSpeedInRight" id="profession"><h2 class="me">Hey, It's Me Mithun</h2></h4>
+            <p class="about"><strong>I am a <span class="span-col">Full Stack Developer</span></strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-3 p-5" id="skills">
+        <div class="container">
+          <div class="row ">
+            <h1 class="skill" style="text-align: center;">SKILLS</h1>
+            <div class="col-md-4 mb-4">
+              <div class="card text-center p-4 mt-3">
+                  <i class="fa-brands fa-html5 display-1"></i>
+                  <div class="card-body">
+                    <p class="card-text ">HTML</p>
+                  </div>
+                </div>
+          </div>
+            <div class="col-md-4 mt-3 mb-4">
+              <div class="card text-center p-4">
+                <i class="fa-brands fa-css3 display-1"></i>
+                <div class="card-body">
+                  <p class="card-text">CSS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3 ">
+              <div class="card text-center p-4">
+                <i class="fa-brands fa-js display-1"></i>
+                <div class="card-body">
+                  <p class="card-text">Java Script</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card text-center p-4 mt-3">
+                <i class="fa-brands fa-bootstrap display-1"></i>
+                <div class="card-body">
+                  <p class="card-text">Boot Strap</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card text-center p-4 mt-3">
+                <i class="fa-brands fa-python display-1"></i>
+                <div class="card-body">
+                  <p class="card-text">PYTHON</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-3">
+              <div class="card text-center p-4 mt-3">
+                <img src="/images/django.svg" class="django" width="15%" style="margin-left: 150px;  -webkit-filter: grayscale(100%) brightness(0) invert(0%); filter: grayscale(100%) brightness(0) invert(0%);">
+                <div class="card-body">
+                  <p class="card-text">Django</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-3 p-5" id="projects">
+        <div class="container">
+          <h1 class="project">PROJECTS</h1>
+          <div class="row">
+            <div class="col-md-4 mt-3">
+              <div class="card text-center p-4 mt-3">
+                <img class="card-img-top" src="/images/Screenshot (6).png" alt="">
+                <div class="card-body">
+                  <p class="card-text">Tribute Page</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-3">
+              <div class="card text-center p-4 mt-3">
+                <img class="card-img-top" src="/images/Screenshot (7).png" alt="">
+                <div class="card-body">
+                  <p class="card-text">Breaking The Caesar Cipher</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mt-3 ">
+              <div class="card text-center p-4 mt-3">
+                <img class="card-img-top" src="/images/Screenshot (3).png" alt="">
+                <div class="card-body">
+                  <p class="card-text">Quick Recipe Finder</p>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+      
+      <div class="row mx-5">
+        <div class=" col-12 col-md-6 d-flex justify-content-center">
+          <div class="contact-container">
+            <section id="contact">
+                <div class="direct-contact-container ">
+                  <h1 class="section-header mb-4">Get In Touch</h1>
+                  <div class="contact-wrapper ">
+                  <!-- Left contact page -->
+                    <form id="contact-form" class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <div class="col-sm-12">
+                          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                        </div>
+                      </div>
+                      <div class="form-group ">
+                        <div class="col-sm-12">
+                          <input type="email" class="form-control mt-4" id="email" placeholder="EMAIL" name="email" value="" required>
+                        </div>
+                      </div>
+                      <textarea class="form-control mt-4 " rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                      <button class="btn btn-primary send-button mt-4 w-100" id="submit" type="submit" value="SEND">
+                        <div class="alt-send-button">
+                          <i class="fa fa-paper-plane ms-5 me-5 "></i><span class="send-text ms-5 mt-3 me-5">SEND</span>
+                        </div>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+            </section>
+          </div>
+        </div>
+        
+          <!-- Right contact page -->
+        
+              <div class="col-12 col-md-6 d-flex justify-content-center ">
+                <div class="contact-container">
+                    <section id="touch">
+              
+                        <div class="direct-contact-container ">
+                          <h1 class="section-header mt-2">Contact Me</h1>
+                          <ul class="contact-list mt-3 me-2">
+                            <li class="list-item "><i class="fa fa-map-marker fa-2x "><span class="contact-text place ms-4">Trivandrum, Kerala</span></i></li>
+                            <li class="list-item "><i class="fa fa-envelope fa-2x "><span class="contact-text gmail ms-3"><a href="mailto:#" title="Send me an email">mithuncsesist1923@gmail.com</a></span></i></li>
+                            <li class="list-item "><i class="fa fa-phone fa-2x "><span class="contact-text phone ms-3"><a href="tel:1-212-555-5555" title="Give me a call">+91 9744807109</a></span></i></li>
+                          </ul>
+
+                          <div class="social-media-and-copyright">
+                            <hr>
+                            <ul class="social-media-list text-center" >
+                              <li><a href="#" target="_blank" class="contact-icon">
+                                <i class="fab fa-github mt-3" aria-hidden="true"></i></a>
+                              </li>
+                              <li><a href="#" target="_blank" class="contact-icon">
+                                <i class="fab fa-codepen mt-3" aria-hidden="true"></i></a>
+                              </li>
+                              <li><a href="#" target="_blank" class="contact-icon">
+                                <i class="fab fa-twitter mt-3" aria-hidden="true"></i></a>
+                              </li>
+                              <li><a href="#" target="_blank" class="contact-icon">
+                                <i class="fab fa-instagram mt-3" aria-hidden="true"></i></a>
+                              </li>
+                            </ul>
+                            <hr>
+                            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+              </div>
+      </div>  
+
+
+  
+          
+        
+        
+       
+      
+
+
+    
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
